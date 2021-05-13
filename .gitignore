@@ -29,5 +29,5 @@ yay-git/
 .config/pulse/
 .config/gtk-2.0/
 .config/gtk-3.0/
-.config/'Code - OSS'/
+.config/Code\ -\ OSS/
 .config/chromium/

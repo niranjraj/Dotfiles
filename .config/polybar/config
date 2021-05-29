@@ -61,7 +61,7 @@ override-redirect = false
 ;scroll-down = i3wm-wsprev
 
 
-modules-left = bspwm sep term  web  files  code  git  arch
+modules-left = bspwm sep 
 modules-center = date sep time
 modules-right =   temperature  battery  pulseaudio  network  sysmenu 
 tray-position =right

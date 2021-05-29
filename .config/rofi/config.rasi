@@ -11,8 +11,8 @@ configuration {
 * {
   font: "Fira Code 12";
   /* padding: 3px 5px; */
-  background-color: #000009;
-  foreground: #a9b1d6;
+  background-color: #2E3440;
+  foreground: #D8DEE9;
   window-bordercolor: #4A5057;
   color: @foreground;
   separator-color: @window-bordercolor;

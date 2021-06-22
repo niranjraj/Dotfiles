@@ -24,20 +24,15 @@ include-file = ~/.config/polybar/date.ini
 
 
 [bar/example]
-monitor = ${env:MONITOR:}
-width = 100%
-height = 30
-offset-x = 0
-offset-y = 0
 
-fixed-center = true
 
+height = 33
 background = ${colors.background}
 foreground = ${colors.foreground}
 
 line-size = 2
 ;line-color = #f00
-
+offset-y = 10
 padding=1
 
 font-0 = "Hack:size=10;2"
@@ -48,33 +43,54 @@ font-4 = "Lobster-Regular:size=12;2"
 
 
 ;tray-background = #0063ff
-
-wm-restack = bspwm
 ;wm-restack = i3
 
 override-redirect = false
-
+wm-restack=bspwm
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
 
 ;scroll-up = i3wm-snext
-;scroll-down = i3wm-wsprev
-
-
-modules-left = bspwm sep 
-modules-center = date sep time
-modules-right =   temperature  battery  pulseaudio  network  sysmenu 
-tray-position =right
-tray-detached = false
-tray-background = ${colors.background}
-tray-padding = 3
-
-enable-ipc = true
+;scroll-down = i3wm-w
+enable-ipc= true
 cursor-click = pointer
 cursor-scroll = ns-resize
 
 
+[bar/bspwm]
+inherit = bar/example
+width = 30%
+offset-x=15
+padding=2
+tray-position=center
+tray-offset-x=-10%
+modules-left=bspwm sep 
+modules-right=xwindow
+radius=12
 
+[bar/app]
+inherit=bar/example
+width=10%
+radius=12
+offset-x=70%
+modules-center=speed network
+ 
+[bar/time]
+inherit=bar/example
+width=7%
+radius=12
+offset-x=81%
+modules-center=time
+
+[bar/sys]
+inherit = bar/example
+width = 10%
+radius=12
+offset-x = 89%
+
+;tray-position = right
+
+modules-center =  pulseaudio battery  sysmenu
 
 
 

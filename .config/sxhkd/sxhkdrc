@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + d
-	rofi -show drun
+	rofi -show drun -modi run,drun,window  -theme $HOME/.config/rofi/launcher/style
 
 # make sxhkd reload its configuration files:
 super + Escape

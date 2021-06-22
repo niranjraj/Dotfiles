@@ -46,3 +46,19 @@ Documents/
 Pictures/
 Projects/
 .config/libreoffice/
+.config/Kite/
+.config/Postman/
+.config/PostmanAgent/
+.config/autostart/
+ .config/systemd/
+.histfile
+.kite/
+.psql_history
+.themes/
+.wget-hsts
+.zcompdump
+.zshrc
+.config/configstore/
+.config/systemd/
+.config/htop/
+
